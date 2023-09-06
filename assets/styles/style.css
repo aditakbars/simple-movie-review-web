@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+p{
+  font-family: 'Lora', serif;
+}
+
 body {
   font-family: 'Lora', serif;
   font-family: 'Inter', sans-serif;
@@ -33,14 +37,13 @@ nav li {
 
 nav a {
   font-size: 18px;
-  font-weight: 400;
+ font-weight: 555; 
   text-decoration: none;
   color: white;
 }
 
 nav a:hover {
   color: rgb(98, 255, 0);
-  font-weight: bold;
   transform: scaleY(2);
 }
 
@@ -83,7 +86,7 @@ article{
   
   color: #fff;
   padding: 1em;
-  background-color: #0a0c0d49;
+  background-color: #0a0c0d70;
   border-radius: 0.7em;
   flex-grow: 1;
 }
@@ -92,7 +95,7 @@ article{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 100%;
+  min-width: fit-content;
 }
 
 aside {
@@ -103,12 +106,21 @@ aside {
 
 footer {
   padding: 10px;
-  color: #fff;
+  color: #d8e0e8;
   background-color: #282f3a;
   text-align: center;
   position: relative;
   margin-bottom: 0;
   bottom: 0;
+}
+
+footer p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+footer:hover{
+  color: #2de239;
 }
 
 h2 {
@@ -130,10 +142,15 @@ h3 {
   float: center;
   font-size: 1.3em;
   text-align: justify;
-  
+}
+
+#welcome h2{
+  font-weight: 800;
+  font-size: 1.8em;
 }
 
 #welcome p {
+  margin-top: -0.2em;
   text-indent: 2em;
 }
 
@@ -193,11 +210,12 @@ h3 {
   max-height: 15em;
 }
 
-@media screen and (max-width: 1280px;){
+/* @media screen and (min-width: 1100px;){
   .landing{
+    background-repeat: repeat-y;
     max-height: 70vh;
   }
-}
+} */
 
 
 @media screen and (max-width: 1000px) {
@@ -221,6 +239,10 @@ h3 {
   #movies{
     max-height: fit-content;
     max-width: fit-content;
+  }
+
+  footer p{
+    font-size: 0.876em;
   }
 }
 
