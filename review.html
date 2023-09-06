@@ -32,8 +32,9 @@
         </article>
         <div class="card-container">
 
+
             <a href="movie1.html">
-              <article class="card" id="movies">
+              <article class="moviecard">
                 <div class="postercard">
                   <img src="/assets/images/prisoners poster.jpg" alt="prisoners(2013)">
                 </div>
@@ -41,7 +42,7 @@
               </article>
             </a>
             <a href="movie2.html">
-              <article class="card" id="movies">
+              <article class="moviecard">
                 <div class="postercard">
                   <img src="/assets/images/jkt vs everybody poster.jpg" alt="jkt vs everybody(2022)">
                 </div>
@@ -49,7 +50,7 @@
               </article>
             </a>
             <a href="movie3.html">
-              <article class="card" id="movies">
+              <article class="moviecard">
                 <div class="postercard">
                   <img src="/assets/images/prisoners poster.jpg" alt="prisoners(2013)">
                 </div>
@@ -58,9 +59,8 @@
             </a>
 
 
-
             <a href="movie4.html">
-              <article class="card" id="movies">
+              <article class="moviecard">
                 <div class="postercard">
                   <img src="/assets/images/jkt vs everybody poster.jpg" alt="jkt vs everybody(2022)">
                 </div>
@@ -68,45 +68,28 @@
               </article>
             </a>
             <a href="movie5.html">
-              <article class="card" id="movies">
+              <article class="moviecard">
                 <div class="postercard">
-                <img src="/assets/images/shape of water.jpg" alt="prisoners(2013)">
-              </div>
-              <p>The Shape of Water (2017)</p>
-            </article>
-          </a>
+                  <img src="/assets/images/shape of water.jpg" alt="prisoners(2013)">
+                </div>
+                <p>The Shape of Water (2017)</p>
+              </article>
+            </a>
           <a href="movie6.html">
-            <article class="card" id="movies">
+            <article class="moviecard">
               <div class="postercard">
                 <img src="/assets/images/jkt vs everybody poster.jpg" alt="jkt vs everybody(2022)">
               </div>
               <p>Jakarta vs Everybody (2022)</p>
             </article>
           </a>
-        
-          
       </div>
-      <button onclick="scrollLeft()">Previous</button>
-      <button onclick="scrollRight()">Next</button>
+
     </main>
 
     <footer>
       <p>Cooked up with passion (and a pinch of silliness) by Adit Akbars &#169; 2023</p>
     </footer>
-
-    <script>
-      const container = document.getElementById('card-container');
-      const cardWidth = container.querySelector('.card-group').offsetWidth + 20; // Lebar card + margin
-  
-      function scrollLeft() {
-        container.scrollLeft -= cardWidth * 3; // Menggeser 3 kelompok card ke kiri
-      }
-  
-      function scrollRight() {
-        container.scrollLeft += cardWidth * 3; // Menggeser 3 kelompok card ke kanan
-      }
-    </script>
-
 
   </body>
 </html>
