@@ -56,10 +56,10 @@ main {
 .landing {
   padding: 20px;
   overflow: auto;
-  background-image: url(/assets/images/la\ jetee.png);
+  background-image: url(/assets/images/meanstreets_stills2.jpg);
   background-size: cover;
-  background-position: left;
-  min-height: 100vh;
+  background-position: center;
+  min-height: fit-content;
 }
 
 .card-container{
@@ -80,11 +80,19 @@ article{
 }
 
 .landing article{
-  color: antiquewhite;
+  
+  color: #fff;
   padding: 1em;
-  background-color: #0a0c0dd7;
+  background-color: #0a0c0d49;
   border-radius: 0.7em;
   flex-grow: 1;
+}
+
+#content-landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
 }
 
 aside {
@@ -114,11 +122,34 @@ h3 {
 #content {
   float: left;
   width: 75%;
+  font-size: 1.5em;
 }
 
 #welcome {
   width: 100%;
-  float: none;
+  float: center;
+  font-size: 1.3em;
+  text-align: justify;
+  
+}
+
+#welcome p {
+  text-indent: 2em;
+}
+
+#socmed-icon{
+  /* background-color: #00c8eb; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#socmed-icon a{
+  color: #fff;
+}
+
+#socmed-icon a:hover{
+  color: #27d133;
 }
 
 .jumbotron {
@@ -162,6 +193,13 @@ h3 {
   max-height: 15em;
 }
 
+@media screen and (max-width: 1280px;){
+  .landing{
+    max-height: 70vh;
+  }
+}
+
+
 @media screen and (max-width: 1000px) {
   .landing{
     background-image: none;
@@ -169,6 +207,9 @@ h3 {
     padding: 20px;
     overflow: auto;
     min-height: 85vh;
+    background-image: url(/assets/images/taxi-driver-stills1-port.jpg);
+    background-size: cover;
+    background-position: center;
   }
 
   #content,
