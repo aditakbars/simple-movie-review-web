@@ -208,6 +208,7 @@ h3 {
   justify-content: center;
   align-items: center;
   height: 350px; /* Tinggi yang diinginkan untuk setiap postercard */
+  max-height: fit-content;
 }
 
 .moviecard p{
@@ -222,15 +223,18 @@ h3 {
 }
 
 .review-content p{
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   text-align: justify;
   text-indent: 2em;
 }
 
-.review-poster-container{
+.review-image-container{
   display: flex;
   justify-content: center;
   padding: 0px;
   margin: 0px;
+  max-height: fit-content;
 }
 
 .moviecard-review{
@@ -238,7 +242,7 @@ h3 {
   border-radius: 5px;
   padding: 0em;
   z-index: 5;
-  max-width: fit-content;
+  max-height: fit-content;
 }
 
 .moviecard-review img{
@@ -247,10 +251,6 @@ h3 {
   object-fit: cover;
 }
 
-.movie-info{
-  position: sticky;
-  top: 0;
-}
 
 #socmed-icon{
   /* background-color: #00c8eb; */
@@ -299,6 +299,15 @@ h3 {
   #movies{
     max-height: fit-content;
     max-width: fit-content;
+  }
+
+  .postercard{
+    max-height: 39vw;
+  }
+
+  .postercard img{
+    min-height: 100%;
+    object-fit: cover;
   }
 
   footer p{
