@@ -53,9 +53,7 @@ nav a:hover {
 }
 
 main {
-  /* background-color: #8899aa; */
   background-color: #2f3845;
-  
   padding: 20px;
   overflow: auto;
   min-height: 100%;
