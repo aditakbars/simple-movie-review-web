@@ -136,13 +136,19 @@ h2 {
 }
 
 h3 {
-  color: #00a2c6;
+  color: #fff;
 }
 
 #content {
+  
+  padding: 0;
   float: left;
   width: 75%;
   font-size: 1.5em;
+}
+
+#content h2 {
+  text-align: center;
 }
 
 #welcome {
@@ -170,18 +176,6 @@ h3 {
   color: #fff;
   text-align: justify;
   z-index: 3;
-}
-
-.featured-image {
-  width: 100%;
-  max-height: 300px;
-
-  object-fit: cover;
-  object-position: center;
-}
-
-.profile img {
-  width: 200px;
 }
 
 .card {
@@ -219,14 +213,43 @@ h3 {
 .moviecard p{
   font-size: 1em;
   text-align: center;
-  
 }
 
 .moviecard:hover{
   transform: scale(1.123);
   animation-delay: 1s;
   background-color: #8899aaba;
+}
 
+.review-content p{
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.review-poster-container{
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.moviecard-review{
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 0em;
+  z-index: 5;
+  max-width: fit-content;
+}
+
+.moviecard-review img{
+  max-width: 100%; /* Agar gambar tidak melebihi lebar card */
+  max-height: 100%; /* Agar gambar tidak melebihi tinggi card */
+  object-fit: cover;
+}
+
+.movie-info{
+  position: sticky;
+  top: 0;
 }
 
 #socmed-icon{
@@ -245,6 +268,15 @@ h3 {
 }
 
 @media screen and (max-width: 1000px) {
+  h2, h3, p{
+    font-size: smaller;
+  }
+
+  p{
+    font-size: 0.77em;
+  }
+  
+
   .landing{
     background-image: none;
     background-color: #2c3440;
@@ -256,10 +288,12 @@ h3 {
     background-position: center;
   }
 
-  #content,
-  aside {
+  #content, aside {
     width: 100%;
-    padding: 0;
+  }
+
+  aside{
+    padding-left: 0;
   }
 
   #movies{
