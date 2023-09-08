@@ -275,6 +275,9 @@ h6 {
   text-align: center;
   font-size: medium;
 }
+.table-container{
+  align-content: center;
+}
 
 table{
   width: 100%;
@@ -350,8 +353,6 @@ table{
     min-height: 100%;
     object-fit: cover;
   }
-
-  
 
   footer p{
     font-size: 0.876em;
