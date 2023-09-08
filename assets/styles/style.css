@@ -97,8 +97,12 @@ article{
   min-width: fit-content;
 }
 
+#about{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 aside {
-  float: right;
   padding-left: 20px;
   width: 25%;
 }
@@ -145,7 +149,6 @@ h6 {
 #content {
   text-align: justify;
   padding: 0;
-  float: left;
   width: 75%;
   font-size: 1.3em;
 }
