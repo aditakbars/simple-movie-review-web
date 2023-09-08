@@ -400,6 +400,10 @@ table{
     object-fit: cover;
   }
 
+  .brr{
+    display: none;
+  }
+
   footer p{
     font-size: 0.876em;
   }
