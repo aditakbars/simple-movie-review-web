@@ -156,7 +156,7 @@ h6 {
 
 #welcome {
   width: 100%;
-  float: center;
+
   font-size: 1.3em;
   text-align: justify;
 }
@@ -279,6 +279,10 @@ h6 {
 #movie-info td{
   padding-left: 1em;
   padding-bottom: 0.35em;
+}
+
+#about h2{
+  text-align: left;
 }
 
 .card-profile{
